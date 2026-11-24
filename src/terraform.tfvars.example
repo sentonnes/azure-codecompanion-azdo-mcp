@@ -1,0 +1,8 @@
+tenant_id    = "00000000-0000-0000-0000-000000000000"
+organization = "my-org"
+projects     = ["Project A", "Project B"]
+owner        = "me@example.com"
+
+# Fill in after the first apply from the `available_scopes` output, e.g.:
+# scopes = ["<read work items scope>", "<write work items scope>", "<build execute scope>", "<wiki write scope>"]
+scopes = []

@@ -1,0 +1,41 @@
+# --- Terraform -------------------------------------------------------------
+# Local provider/module cache
+**/.terraform/*
+
+# State files (local state – never commit; may contain sensitive data)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files – contain tenant IDs / personal details.
+# Keep the committed example.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Saved plans
+*.tfplan
+*tfplan*
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# NOTE: .terraform.lock.hcl IS committed (pins provider versions/hashes).
+
+# --- Editors / OS ----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
